@@ -99,10 +99,24 @@ body{
 }
 
 .informacoes-inicio h1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 25px;
     color: #307ef3;
+}
+
+.instagram-h1-icon {
+    color: #307ef3; 
+    font-size: 24px; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+.instagram-h1-icon:hover {
+    color: white; 
 }
 
 .informacoes-inicio p {
@@ -210,4 +224,5 @@ body{
     margin-top: 10px;
     text-align: center;
     max-width: 250px;
+
 }
