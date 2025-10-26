@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px; 
+    background-color: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid rgba(48, 126, 243, 0.5);
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+
+}
+
+.navbar a:hover{
+    color: #307ef3;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    gap: 0;
+}
+
+.conteudo-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    max-width: 1200px;
+}
+.titulo-secao{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px #307ef3;
+}
+.fotoperfil{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 15px #307ef3;
+
+}
+
+.fotoperfil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.caixa-informacoes {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 15px #307ef3;
+    max-width: 600px;
+    border: 1px solid #307ef3;
+}
+
+.informacoes-inicio {
+    padding: 0;
+}
+
+.informacoes-inicio h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #307ef3;
+}
+
+.informacoes-inicio p {
+    font-size: 16px;
+    max-width: 500px;
+    line-height: 1.8;
+    text-indent: 10px;
+
+    text-align:justify;
+
+}
+
+.recomendacoes{
+    min-height: 100vh;
+    padding: 100px 9% 50px;
+    text-align: center;
+}
+
+
+.recomendacoes-paragrafo p {
+    font-size: 18px;
+    line-height: 1.6;   
+}
+
+.sub-navbar-recomendacoes{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(48, 126, 243, 0.3);
+    border-bottom: 1px solid rgba(48, 126, 243, 0.3);
+}
+
+.sub-navbar-recomendacoes a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 25px;
+    padding: 5px 10px;
+    transition: color 0.3 ease, transform 0.3 ease;
+}
+
+.sub-navbar-recomendacoes a:hover {
+    color: #307ef3;
+    transform: scale(1.1);
+}
+
+.categoria-recomendacao{
+    padding: 60px 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titulo-categoria{
+    font-size: 28px;
+    font-weight: 500;
+    color: #307ef3;
+    margin-bottom: 30px;
+}
+
+.caixa-informacoes-recomendacao{
+    background-color: #1a1a1a;
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 10px #307ef3;
+    border: 1px solid #307ef3;
+
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;  
+    width: fit-content;
+    max-width: 90%;
+}
+
+.caixa-informacoes-recomendacao img{
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3 ease;
+}
+
+.caixa-informacoes-recomendacao img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(48, 126, 243, 0.7);
+}
+
+.item-recomendacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.item-recomendacao figcaption{
+    font-size: 14px;
+    font-weight: 400;
+    color: #ccc;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 250px;
+}
